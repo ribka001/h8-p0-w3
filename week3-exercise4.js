@@ -10,6 +10,7 @@ console.log(dataHandling2(input));
 var newArr = dataHandling2(input);
 
 var birthday = input[3].split("/");
+var fullBirthday = input[3].split("/").join("-");
 var month = birthday[1]
 
 switch(month){
@@ -55,7 +56,7 @@ switch(month){
 birthday.sort(function(value1, value2) { return value2 - value1 });
 console.log(birthday);
 
-console.log(birthday.join("-"));
+console.log(fullBirthday);
 
 var name = newArr[1]
 var irisan1 = name.slice(0,15);
